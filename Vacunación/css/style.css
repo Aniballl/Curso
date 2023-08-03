@@ -1,0 +1,24 @@
+body{
+    text-align: center;
+    margin: 20px;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(58, 58, 58);
+    background-color: rgb(235, 235, 235);
+}
+.entrada{
+    width: 70%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    color: rgb(58, 58, 58);
+    background-color:rgb(235, 235, 235);
+    font-size: 25px;
+}
+.entrada option{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(58, 58, 58);
+    background-color:rgb(235, 235, 235);
+    margin: auto;
+}
