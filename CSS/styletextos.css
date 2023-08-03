@@ -1,0 +1,93 @@
+.contenedor{
+    width: 60%;
+    margin: auto;
+}
+.titulosP{
+    color: burlywood;
+    background-color: coral;
+    text-align: center;
+    padding: 10px 0px;
+}
+/*justifica el parrafo pero la ultima linea esta alineada a la derecha*/
+.parrafo1{
+    text-align: justify;
+    text-align-last: right;
+}
+.loca{ /*Escribir de derecha a izquierda*/
+    direction: rtl;
+    unicode-bidi: bidi-override;
+
+}
+/*Alineación vertical*/
+
+.img1{
+    vertical-align: baseline;/*normal*/  
+    
+}
+
+.img2{
+    vertical-align: text-top;/*arriba del texto*/   
+}
+.img3{
+    vertical-align: text-bottom;
+}
+.img4{
+    vertical-align: sub;
+}
+.img5{
+    vertical-align: super;
+}
+/*Decoración del text*/
+.p1{
+    text-decoration: overline;/*linea arriba*/
+    text-decoration-color: rgb(104, 104, 175);
+    text-decoration-style: dotted;
+    text-decoration-thickness: 5px;
+    /*grosor de la linea*/
+}
+.p2{
+    text-decoration: line-through;/*linea al medio*/
+}
+.p3{
+    text-decoration: underline #d2d2d2 wavy 2.5px;/*linea abajp*/
+}
+.p4{
+    text-decoration: overline underline;
+    /*linea arriba y abajo*/
+}
+/*Eliminar la decoración implicita que tienen los enlaces*/
+.enlace{
+    text-decoration: none;
+    padding: 10px;
+    border: solid rgb(117, 112, 112) 1px;
+    margin: 10px 0;
+    color: rgb(171, 134, 206);
+}
+/*transformación del texto*//* Espaciado del texto*//* Sombra del Texto*/
+.t1{
+    text-transform: uppercase; 
+    /*mayusculas*/
+    text-indent: 50px;/*crea un espacio antes como tabulador*/
+    text-shadow: 2px 2px; /*sobra del mismo espacio entre letras*/
+    
+}
+.t2{
+    text-transform: lowercase; 
+    /*minuscula*/
+    letter-spacing: 5px;/*crea un espació entre letras*/
+    color: white;
+    text-shadow: 2px 2px 5px red;
+    /*fondo desenfocado, blur*/
+}
+.t3{
+    text-transform: capitalize; 
+    /*primera mayuscula y resto minuscula*/
+    line-height: 5;/*altura de la linea y medidas que van desde 0-x sin unidad*/
+    text-shadow: 0 0 3px red;/*neon*/
+}
+.t4{
+    font-variant: small-caps; 
+    /*versalitas, primera en mayuscual y las sgueintes en mayusculas pero peuqeñas*/
+    word-spacing: 10px;/*indica el espaciado entre palabras*/
+    text-shadow: 0 0 5px red, 0 0 5px blue;/*varios colores de la sombra*/
+}

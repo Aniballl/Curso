@@ -1,0 +1,84 @@
+.contenedor{
+    width: 50%;
+    margin: auto;
+    border: 3px dotted rgb(91, 199, 91);
+}
+ul{
+    border: 2px dotted rgb(91, 199, 91);
+    width: 25%;
+    margin: 25px auto;
+    padding: 25px;
+}
+/*Indicar un estilo pasando la posición de la lista*/
+.lista1 li:nth-child(2){
+background-color: darkblue;
+color: aliceblue;
+}
+.lista2{
+    list-style: circle;
+    color: rgb(16, 218, 16);
+}
+/*Inside, te lo mete hacia dentro, te deja un espacio, como un padding, hacia la derrecha*/
+.lista3{
+    list-style:square inside url("../IMG/Estrella.png");
+}
+.lista3 li:nth-child(3){
+    list-style: inside url("../IMG/close.png");
+}
+.tabla,.tabla2{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+}
+.tabla td, .tabla th{
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+}
+.tabla th{
+    background-color: rgb(0, 0, 0);
+    padding: 12px 0;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+/*Par-even Inpar-odd*/
+.tabla tr:nth-child(even){
+    background-color: rgb(255, 255, 255);
+}
+.tabla tr:nth-child(odd){
+    background-color: lightblue;
+}
+.tabla td{
+    text-align: center;
+}
+.tabla tr:hover{
+    background-color: rgb(220, 252, 252);
+}
+.tabla2 tr{
+    border-bottom: 1px dotted black;
+    text-align: center;
+}
+.tabla2 td, .tablat th{
+    padding: 15px 0;
+}
+.tabla3{
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0 3px rgb(151, 151, 151); 
+    width: 80%;
+    margin: auto;
+}
+.tabla3 td,.tabla3 th{
+    text-align: center;
+    padding: 8px 0;
+    border-top: 1px solid black;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.tabla3 th{
+    border-top: none;
+}
+.tabla3 tr,.tabla3 th{
+    padding: 15px 0;
+}

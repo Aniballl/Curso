@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.menu1,.menu2{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: beige;
+    margin: auto;
+}
+/*dar estilo a cada elemento de la lista*/
+.menu1 li a,.menu2 li a{
+    display: block;
+    color: rgb(34, 165, 132);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.menu1 li a:hover{
+    background-color: rgb(241, 241, 172);
+    color: rgb(97, 236, 183);  
+}
+.menu2{
+    border: 1.5px solid black;
+}
+.menu2 li a{
+  border-bottom: 1.5px solid black;
+  text-align: center;
+  
+}
+.menu2 li:last-child{
+    border-bottom: none;
+}
+.menu2 li a.active{
+    background-color: rgba(231, 223, 245, 0.993);
+    color: rgb(34, 135, 160);
+}
+.menu2 li a:hover:not(.active){
+    background-color: rgba(231, 223, 245, 0.993);
+    color: rgb(34, 135, 160);
+}
+
+.menu3{
+    list-style: none;
+    background-color: black;
+    position: sticky;
+    padding: 0;
+    margin: auto;
+    overflow: hidden;
+
+}
+.menu3 li a{
+    display: block;
+    float: left;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.menu3 li {
+    display: block;
+    float: left;
+    margin: auto;
+}
+.menu3 li a:hover{
+    background-color: rgb(74, 197, 245);
+    color: black;
+}
+.active{
+    background-color:rgb(74, 197, 245);
+    color: black;
+}
+.divCentrado{
+    width: 60%;
+    background-color: black;
+    padding: 20px 0;
+    margin: auto;
+}
+.menu4{
+    margin: auto;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.menu4 li a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+.menu4 li a:hover{
+    background-color: bisque;
+}
+.menu5{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+.menu5 li{
+    float: left;
+}
+.menu5 li a,.dropbtn{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.menu5 li.dropdown{
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    min-width: 232;
+    background-color: rgb(212, 45, 45);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.473);
+    z-index: 1;
+    
+}
+.dropdown-content a{
+    color: rgb(0, 0, 0) !important;
+    background-color: rgb(212, 45, 45);
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover{
+    background-color: rgba(236, 68, 68, 0.76);
+}
+/*Mostrar el contenido cuando pase el raton sobre el Elemento 4*/
+.dropdown:hover .dropdown-content{
+    display: block;
+} 

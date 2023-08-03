@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes</title>
+    <style>
+        #Niño-Futbol,#Golf,#Ski,.galeria{
+            border: 2px solid rgb(24, 150, 167);
+            width: 300px;
+            margin: 20px;
+            opacity: 1;//* su valor esta entre 0 y 1, 0 lo oculta y 1 se ve tal cual es*/
+        }
+        #bloque1,.galeria{
+            pading: 25px;
+            border: 3px dotted lightcoral;
+            width: 70%;
+            text-align: center;
+        }
+    
+       
+
+
+    </style>
+</head>
+<body>
+    <h1>Imagenes en HTML</h1>
+    <!--Atributos de las imagebes
+    alt: Texto identificación para cuando no se encuentr la imagen y para la accesibilidad
+    width: ancho de la imagen
+    heigth: altp de la imagen
+    -->
+    <img src="img/fútbol-niño-transparente.webp" alt="Niño jugando al fútbol"id="Niño-Futbol">
+    <img src="IMG/golf-bien.webp" alt="Foto Golf" id="Golf">
+    <div id="bloque1">
+        <p>Bloque para separar las imagenes, el div sirve para eso, separarlas y unirlas a un solo bloque, y no de que salgan pegadas una a otras como las dos de arriba.<br> Ocupa toda la linea si no lo acortas.</p>
+        <img src="img/ski-bien.webp" alt="Ski" id="Ski">
+    </div>
+    <figure id="bloque2">
+        <figcaption><h2>Montajes de Deportes</h2></figcaption> 
+        <img src="img/swimmer-bien.webp" alt="Montaje Natación"class="galeria">
+        <img src="img/fútbol-bien.webp"alt="Niño-Futbol2"class="galeria">
+        <img src="img/Tenis-bien.webp"alt="Pelota"class="galeria">
+        
+
+    </figure>
+
+
+
+
+</body>
+</html>

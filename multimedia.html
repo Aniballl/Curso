@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Multimedia</title>
+    <style>
+        #video2{
+            width: 880px;
+            height: 495px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Videos en HTML</h1>
+    <!--Video directamente con la url-->
+    <video src="https://www.youtube.com/shorts/uvJVB8-JMh0"></video>
+    <h2>Video de Iframe</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/x5dNRb254uI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <br>
+
+   <!--Video directamente de un archivo en mi proyecto
+    Atributo:
+    autoplay: se reproduce automaticamente
+    controls: Proporciona los medios de control sobre el vídeo
+    preload: preload="auto"
+        auto, descarga los datos para precargar lo mejor posible el vídeo
+        metadata: Especifica el navegador que es necesario descargar los metdos del vídeo para tener la información técnica adecuada: dimensión, duración, etc.
+        none: indica que no hay que precargar el archivo de vídeo. Por lo tanto, el navegador no tendra ninguna información técnica del archivo, ni dismensión, ni duración, ni ninguna otra información, etc.
+    width y heiht-> es preferible hacerlo desde la fuente, pero la etiqueta video la permite 
+    loop: para que el vídeo se reproducca en bucle
+    muted: para desactivar el sonido
+    poster: muestra una imagen antes que cargue el video.
+    *Observación: Los navegadores no autoreproducen el vídeo al menos que le indiques que es muted, o esta desactivado el sonido.
+    -->
+
+   <h2>Video de un Archivo</h2>
+   <video src="VIDEO/Edwards-Webm-showing-Butler-who_s-Wolves_-alpha-_-.webm" autoplay controls preload="auto" width="250" loop muted></video>
+
+    <!--Vídeo de varios origenes o formatos-->
+
+    <h2>Vidio de varios origenes</h2>
+    <video src="VIDEO/Edwards-Webm-showing-Butler-who_s-Wolves_-alpha-_-.webm" controls poster="IMG/nba-webp.webp" id="video2" loop muted>
+        <source src="VIDEO/Edwards showing Butler who's Wolves' alpha 😤 .mp4"/>
+        <source src="VIDEO/Edwards-Webm-showing-Butler-who_s-Wolves_-alpha-_-.webm"/>
+    </video>
+
+    <h2>Archivos de Audio</h2>
+    <!--Atributos:
+        src: donde se ubica el archivo
+    -->
+    <audio src="AUDIO/videoplayback.mp3" controls autoplay preload="auto" loop></audio>
+    
+
+    
+</body>
+</html>
