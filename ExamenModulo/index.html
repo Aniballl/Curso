@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uship</title>
+    <script src="js/script.js"></script>
+    <link rel="shourtcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="menuP">
+        <img src="img/logo (1).png" alt="logo de la empresa">
+        <ul class="menu">
+            <li>
+                <a href="Index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="EnvioN.html">Envio Nacional</a>
+            </li>
+            <li>
+                <a href="EnvioInt.html">Envio Internacional</a>
+            </li>
+            <li>
+                <a href="Form.html">Contacto</a>
+            </li>
+         </ul>
+    </nav>
+
+    <div class="container">
+        <div class="Titulo">
+            <h2>¿CUÁNTO ME VA A COSTAR MI PEDIDO?</h2>
+        </div>
+        <section>
+            <label for="lugar">Indique el destino de su pedido</label>
+            <select id="lugar">
+                <option value=""> </option>
+                <option value="2">Tu misma Localidad</option>
+                <option value="5">Tu misma Provincia</option>
+                <option value="8">Tu misma Comunidad Autónoma</option>
+                <option value="16">Baleares o Canarias</option>
+                <option value="18">Ceuta o Melilla</option>
+                <option value="12">Resto de España</option>
+                <option value="20">Europa</option>
+                <option value="25">Resto del mundo</option>
+            </select>
+            
+            <div class="kilos">
+                
+                <label for="peso">Seleccione lugar de envío</label>
+                <select id="peso">
+                    <option value=""> </option>
+                    <option value="2.88">Hasta 0.5KG</option>
+                    <option value="4.75">Hasta 5KG</option>
+                    <option value="6.49">Hasta 10KG</option>
+                    <option value="9.39">Hasta 20KG</option>
+                </select>
+            </div>
+            
+                <button type="submit" onclick="calcular()" class="boton">Precio final</button>
+            <h3 id="resultado"></h3>
+        </section>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <script src="js/form.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shourtcut icon" href="img/favicon.png">
+</head>
+<body>
+    <nav class="menuP">
+        <img src="img/logo (1).png" alt="logo de la empresa">
+        <ul class="menu">
+            <li>
+                <a href="Index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="EnvioN.html">Envio Nacional</a>
+            </li>
+            <li>
+                <a href="EnvioInt.html">Envio Internacional</a>
+            </li>
+            <li>
+                <a href="Form.html">Contacto</a>
+            </li>
+         </ul>
+    </nav>
+>
+    <h3>Contacto</h3>
+    <div class="container">
+        <form action="" method="get">
+            <label for="fname">Nombre</label>
+        <input type="text" id="fname" name="firstname" placeholder="Nombre y Apellidos.." class="entrada">
+        <div class="telOculto">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Tu Telefono...">
+        </div>
+        <div class="emailOculto">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Tu Email...">
+        </div>
+        <br>
+        <label for="subject">Mensaje</label>
+        <textarea id="subject" name="subject" placeholder="Escribe Algo.." style="height:200px"></textarea>
+        <br>
+        <button type="button" id="boton">Enviar</button>
+        </form>
+        <p id="mensaje"></p>
+    </div>
+</body>
+</html>
