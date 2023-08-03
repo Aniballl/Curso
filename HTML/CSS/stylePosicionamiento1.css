@@ -1,0 +1,31 @@
+body{
+    background: rgb(86, 177, 131) url("../IMG/fútbol-bien.webp") no-repeat fixed center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.izquierda,.derecha{
+    width: 200px;
+    background-color: rgb(134, 230, 193);
+    padding: 10px;  
+    margin-bottom: 50px;
+}
+.izquierda{
+    float: left;
+    margin-left: 25px;
+}
+.derecha{
+    float: right;
+    margin-right: 25px;
+}
+header h1{
+    padding-top: 100px;
+    text-align:center;
+}
+.normal{
+    width: 80%;
+    margin: auto; 
+    background-color: rgb(134, 230, 193);
+    clear: both;
+}
+.normal p{
+    padding: 15px;
+}

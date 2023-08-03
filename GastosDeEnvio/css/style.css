@@ -1,0 +1,106 @@
+ .logo img{
+    max-width: 50%;
+    float: left;
+    padding: 20px; 
+ }
+ .logo1{
+    text-align: center;
+    margin: auto;
+ }
+ .titulo h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #0F2F62;
+    padding-top: 12%;
+    padding-bottom: 20px;
+    padding-left: 2%;
+    text-align: center;
+    font-size: xx-large;
+    margin: auto;
+ }
+ .logo{
+    max-width: 50%;
+    text-align: center;
+ }
+ .titulo{
+    max-width: 100%;
+    text-align: center;
+ }
+section{
+    clear: both;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+    width: 80%;
+ }
+.boton{
+    background-color: #0F2F62;
+    border: 1px solid #0F2F62;
+    padding: 10px;
+    color: white;
+    margin: auto;
+}
+.boton:hover{
+    color: #0F2F62;
+    border: 1px solid #0F2F62;
+    background-color: white;
+}
+input#peso{
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px dotted #0F2F62;
+}
+h3{
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+@media (width<=800px){
+    .titulo{
+        width: 100%;
+    }
+    .titulo h1{
+        width: 100%;
+        font-size: 50px;
+    }
+    .boton{
+        width: 90%;
+        height: auto;
+        padding-top: 10px;
+    }
+    .logo img{
+        width: auto;
+        height: auto;
+        padding-top: 40px;
+        max-width: 70%;
+    }
+    .resultado{
+        width: 90%;
+        height: auto;
+    }
+}
+@media (width<=550px){
+    .logo img{
+        width: 70%;
+        height: auto;
+        padding-top: 30px;
+        max-width: 80%;
+    }
+    .titulo h1{
+        width: 100%;
+        height: auto;
+        font-size: 25px;
+    }
+}
+@media(width<=300px){
+    .logo img{
+        width: 70%;
+        height: auto;
+        padding-top: 40px;
+        max-width: 80%;
+    }
+    .titulo h1{
+        width: 100%;
+        height: auto;
+        font-size: 20px;
+    }
+}

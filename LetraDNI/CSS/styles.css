@@ -1,0 +1,31 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    color: rgb(241, 136, 136);
+    text-align: center;
+}
+.contenedor{
+    text-align: center;
+    margin: 20px auto;
+}
+.imgDni, .texto-centrado{
+    text-align: center;
+}
+#msnError{
+    color: darkred;
+    font-style: italic;
+}
+@media (width<=800px){
+    .contenedor{
+        width: 100%;
+    }
+    .texto-centrado{
+        width: 90%;
+        height: auto;
+    }
+    .imgDni{
+        width: 90%;
+        height: auto;
+    }
+}

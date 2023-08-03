@@ -1,0 +1,62 @@
+h1{
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 2px solid rgb(206, 201, 201);
+    font-size: 50px;
+    color: rgb(158, 158, 158);
+}
+h2{
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+}
+h3{
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    color: rgb(158, 158, 158);
+    border: 1px solid rgb(206, 201, 201);
+}
+p{
+    width: 50%;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+#formTC,#formPP,#formB{
+    display: none;
+}
+/*display: none esconde el elemento y deja libre el espacio que ocupa, es decir, si hay un elelemto arriba, abajo o a un lado, este ocupa su lugar. 
+display: hidden solo esconde el elemento pero deja su espacio tal y como está*/
+
+@media (width>=1280px){/*PC*/
+    #form{
+    width: 50%;
+    margin: auto;
+    }
+}
+@media (width<767px){/*Movil*/
+    #form{
+    width: 90%;
+    margin: auto;
+    }
+    .listaFP{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (768px<= width<=1279px){/*Tablet*/
+    #form{
+    width: 50%;
+    margin: auto;
+    }
+}

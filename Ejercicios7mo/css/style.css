@@ -1,0 +1,47 @@
+body{
+    background: rgb(0,33,36);
+    background: linear-gradient(90deg, rgba(0,33,36,0.835171568627451) 0%, rgba(9,121,120,1) 43%, rgba(185,126,87,0.8995973389355743) 100%);
+}
+h1{
+    margin: auto;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #8bd8df;
+    width: 60%;
+}
+h3{
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #8bd8df;
+    width: 60%;
+}
+input{
+    border-color:2px solid rgb(218, 148, 101);
+    padding: 5px 2px;
+    color: #8bd8df;
+    background: transparent;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15;
+}
+button{
+    color: rgb(218, 148, 101);
+    padding: 5px 2px;
+    background: transparent;
+    border-color: 2px solid rgb(218, 148, 101);
+    
+}
+label{
+    color: rgb(218, 148, 101);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    margin-left: 40%;
+}
+p{
+    color: #8bd8df;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+    margin-left: 40%;
+}

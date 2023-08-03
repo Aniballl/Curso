@@ -1,0 +1,18 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    color: rgb(241, 136, 136);
+    text-align: center;
+}
+.contenedor{
+    max-width: 60%;
+    margin: auto;
+}
+.texto-centrado{
+    text-align: center;
+}
+#msnError{
+    color: darkred;
+    font-style: italic;
+}

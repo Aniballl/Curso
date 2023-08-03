@@ -1,0 +1,128 @@
+/* Los comentarios se hacen con barra y asterico */
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+body{
+    background-color: rgba(221, 221, 245, 0.568); 
+    background-image: url("../IMG/5594016.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: scroll;
+    background-size: cover;
+    background-color: rgba(221, 221, 245, 0.568); 
+}
+.izquierda{
+    text-align: right;
+    color:rgb(136, 97, 12)
+}
+.my-header{
+    color: rgb(10, 78, 78);
+}
+.texto-centrado{
+    text-align: center;
+}
+.bloque-centrado{
+    
+    /* Para centrar un bloque de forma horizontalmente div, heder, footer, section, heder */
+   
+    /* Borde tiene 3 propiedades: ancho del borde, la forma, color*/
+/* Ejemplo de borde con aributo valor independientes.
+    borde-width: 2px;
+    border-style: inherit;
+    border-color: antquewhite;
+Poner border con todos los valores en una sola linea
+    border: 2px solid black*/
+    border-top: 15px ridge rgb(194, 126, 214);
+    border-bottom: 15px groove rgb(194, 126, 214);
+    border-left: 15px solid rgb(194, 126, 214);
+    border-right: 15px inset rgb(194, 126, 214);
+    
+    background-color: rgb(166, 116, 209);
+    /* Hacer que las esquinas esten redondeadas */
+    border-radius: 50px 10px 50px 10px;
+    
+}
+h1{
+    color: white;
+}
+.parrafo-borde-izq{
+    padding-left: 14px;
+    border-left: 8px solid rgb(194, 126, 214);
+}
+.bloque-centrado-sborde{
+     margin: 40px auto; 
+    width: 75%;
+}
+.bloque-opaco{
+    background-color: rgb(194, 126, 214);
+    opacity: 0.69;
+}
+.bloque{
+    width: 250px;
+    height: 250px;
+    background-image: url("../IMG/2805141.jpg");
+    background-size: cover;
+    border: 2px solid black;
+    margin: 30px auto;
+    opacity: 0.8;
+    padding: 5px;
+}
+.boton{
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(194, 126, 214);
+    width: 100px;
+    margin: 30px 20px 30px 20px;
+    box-sizing: border-box;
+    
+    
+}
+div.ex3{
+    width: 300px;
+    height: 140px;
+    padding: 55px 50px;
+    box-sizing: border-box;
+    background-color: rgba(193, 126, 214, 0.5);
+    margin: 15px 20px 15px 20px;
+    border: 2px solid black;
+    max-width: 300px;
+}
+div.ex2{
+    width: 300px;
+    height: 500px;
+    padding: 55px 50px;
+    box-sizing: border-box;
+    background-color: rgba(193, 126, 214, 0.5);
+    margin: 15px 20px 15px 20px;
+    border: 2px solid black;
+    max-width: 300px;
+}
+.ancho-largo{
+    margin: 15px 20px 15px 20px;
+    max-width: 250px;
+    height: 250px;
+    background-color: rgba(193, 126, 214, 0.5);
+    border: 2px solid rgb(136, 158, 218);
+    padding: 10px;
+    outline: 2px solid rgb(136, 158, 218);
+    outline-offset: 10px;
+    border-radius: 10%;
+    text-align: justify;   
+}
+.texto{
+    
+    text-align: justify;
+    
+
+}
+.texto-resaltado{
+    text-decoration: underline overline;
+}
+.estilo-enlaces{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(194, 126, 214);
+    padding: 10px;
+}

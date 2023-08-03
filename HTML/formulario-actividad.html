@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+      
+
+    </style>
+</head>
+<body>
+    <h1>FORMULARIO DE SUSCRIPCIÓN</h1>
+    <form>
+        <fieldset>
+            <legend>Datos para el Registro</legend>
+            <p><lebel for="email">Correo electronico:*</lebel>
+            <input type="email" placeholder="tunombre@dominio.com" id="email" name="email" requerid></p>
+           
+            <p><lebel for="password">Contraseña:*</lebel>
+            <input type="password" id="password" id="password" maxlength="10" minlength="8"></p>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Datos personales</legend>
+            <p><lebel for="name">Nombre:*</lebel>
+            <input for="text" id="nombre" name="nombre" placeholder="Indica tu nombre" maxlength="20" minlength="3" required pattern="[a-z,A-ZáéíóúÁÉÍÓÚÑñ ]+" autocomplete></p>
+            
+            <p><label for="apellidos">Apellidos:*</label>
+            <input type="text" id="apellidos" placeholder="Indica tus apellidos" required pattern="[a-zA-ZáéíóúÁÉÍÓÚÑñçÇ- ]+" maxlength="20" minlength="3" autocomplete></p>
+            
+            <p><lebel for="telefono">Teléfono:</lebel>
+            <input type="tel" id="telefono" placeholder="Indique su telefono" required pattern="[6-9]{1}[0-9]{8}"autocomplete></p>
+           <p>
+            Mujer<input type="radio" id="sexo" name="sexo" value="mujer">
+            Hombre<input type="radio" id="sexo" name="sexo" value="hombre"> 
+           </p>
+           <p>
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" name="edad" min="2" max="90">
+          </p>
+          <p>
+            <label for="buscar">Buscar</label>
+            <input type="search" id="buscar" name="buscar" placeholder="Ej: Portátil">
+          </p>
+          <p>
+            <label for="fechaNacimiento">Fecha de nacimiento</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento"> 
+          </p>
+          <p>
+            <label for="fechaPadre">Fecha y hora de nacimiento de tu padre</label>
+            <input type="datetime-local" id="fechaPadre" name="fechaPadre">
+          </p>
+          <p>
+            <label for="mes">¿En que mes te gustaria viajar?</label>
+            <input type="month" id="mes" name="mes">
+          </p>
+          <p>
+            <label for="semana">¿En que semana te gustaria viajar?</label>
+            <input type="week" id="semana" name="semana">
+          </p>
+          <p>
+            <label for="hora">¿A que hora te puedo llamar?</label>
+            <input type="time" id="hora" name="hora">
+          </p>
+          <p>
+            <label for="foto">Envia tu foto: (.jpg)</label>
+            <input type="file" id="foto" accept="image/jpeg" name="foto">
+          </p>
+
+        </fieldset>
+        <fieldset>
+            <legend>Sobre tus Redes Sociales</legend>
+            <p>
+                <lebel for="redes">¿Cual utilizas?</lebel>
+                <br>
+                <lebel for="facebook">Facebook</lebel>
+                <input type="checkbox" id="facebook" name="facebook">
+                <lebeñ for="twitter">Twitter</lebe>
+                <input type="checkbox" id="twitter" name="twitter">
+                <label for="linkedin">Linkedin</label>
+                <input type="checkbox" id="linkedin" name="linkedin">
+                <label for="instagram">Instagram</label>
+                <input type="checkbox" id="instagram" name="instagram">
+                <lebel for="whatsapp">Whats App</lebel>
+                <input type="checkbox" id="whatsapp" name="whatsapp">
+                <label for="snapchat">Snapchat</label>
+                <input type="checkbox" id="snapchat" name="snapchat">
+                <label for="pinterest">Pinterest</label>   
+                <input type="checkbox" id="pinterest" name="pinterest"> 
+
+            </p>
+            <p>
+                <label for="horaRedes">Tiempo aproximado que las utilizas:</label>
+                1 hora<input type="range" min="1" max="24" id="horaRedes" name="horaRedes">24 horas
+            </p>
+            <p>
+                <label for="tuWeb">¿Tienes página Web o blog?</label>
+                <input type="url" id="tuWeb" name="tuWeb">
+            </p>
+        </fieldset>
+        <p>Los datos señalados con * son obligatorios</p>
+        <input type="submit" value="Aceptar">
+
+    </form>
+
+    
+</body>
+</html>

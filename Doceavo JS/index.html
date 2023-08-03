@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos y Fechas</title>
+    <script src="js/script.js"></script>
+    <script src="js/scriptForm.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Fecha Clase</h1>
+    <p>Hoy es, <span id="fecha"></span></p>
+    <p>La hora es, <span id="hora"></span></p>
+    <hr>
+    <h2>La fecha de nacimiento es <span id="fNaci"></span></h2>
+    <h2>La fecha corta es, <span id="fCorta"></span></h2>
+    <h3>Ejemplo Set abajo 🡣 , Ejemplo get arriba 🡡 </h3>
+    <h2>La fecha corta es, <span id="fCorta2"></span></h2>
+    <hr>
+    <input type="date" id="fechaInp">
+    <button id="boton">Enviar</button>
+    <hr>
+    <h1>Validación de Formulario</h1>
+    <h3>Compra de Ticket</h3>
+    <form action="" method="get" id="form">
+        <p><label for="nombre">Nombre Visitante: </label> 
+        <input type="text" id="nombre" name="nombre" maxlength="50" required></p>
+        <p><label for="edad">Edad: </label>
+        <input type="number" id="edad" name="edad" min="1" max="100" required></p>
+        <p><label for="fechaVisita">Fecha de Visitas: </label>
+        <input type="date" name="fechaVisita" id="fechaVisita" required></p>
+        <p><label for="cantidadAdultos">Nº de Entradas Adultos: </label>
+        <input type="number" id="cantidadAdultos" name="cantidadAdultos" min="0" max="200"></p>
+        <p><label for="cantidadNinos">Nº de Entradas Niños: </label>
+         <input type="number" id="cantidadNinos" name="cantidadNinos" min="0" max="200">
+        </p>
+        <p class="listaFP"> 
+            <label for="fPago" >Forma de Pago: </label>
+            <input type="radio" name="fPago"value="visa">Visa
+            <input type="radio" name="fPago"value="master">Master
+            <input type="radio" name="fPago"value="paypal">PayPal
+            <input type="radio" name="fPago"value="bizum">Bizum
+        </p>
+            <div id="formTC">
+                <p><label for="nombreTC">Nombre Titular: </label>
+                <input type="text" id="titular" name="titular" required></p>
+                <p><label for="nTc">Nº Tarjeta </label>
+                <input type="text" id="nTc" name="nTc" maxlength="16" minlength="16"></p>
+                <p><label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" maxlength="3" minlength="3"></p>
+            </div>
+            <div id="formPP">
+                <p><label for="email">Email de PayPal: </label>
+                <input type="text" id="emailPP" name="emailPP"></p>
+                <p><label for="passPP">Contraseña: </label>
+                <input type="password" id="passPP" name="passPP"></p>
+            </div>
+            <div id="formB">
+                <p><label for="numeroB">Numero de Telefono: </label>
+                    <input type="number" id="numeroB" name="numeroB" min="9" max="9">
+                </p>
+                <p>
+                    <label for="nombreB">Nombre del Titular</label>
+                    <input type="text" id="nombreB" name="nombreB" min="3" max="50">
+                </p>
+            </div>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
