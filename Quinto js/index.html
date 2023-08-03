@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quinto JS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Hoy es <span id="dia"></span></h1>
+    <h1>Tienes un <span id="nota"></span></h1>
+    <section class="centrar">
+        <input type="text" id="notaT" placeholder="Escribe tu Nota" required>
+        <button value="calcular" id="calcular" onclick="notaT();">Mostrar Nota</button>
+        <h1 id="resultado"></h1>
+        <p id="msnError"></p>
+    </section>
+    <!--Cambiar de Color-->
+    <label for="numero">Dime un numero del 1 al 6 </label>
+    <input type="number" id="numero"> 
+    <input type="submit" onclick="cambiarColor()" value="Cambiar Color" id="color">
+    <div id="caja" style="width: 250px;height: 250px;"></div>
+    <!--For of de js-->
+    <div id="caja2" style="width: 250px;height: 250px;"></div>
+    <!----------------------------------->
+    <script src="js/scritp.js"></script>
+</body>
+</html>

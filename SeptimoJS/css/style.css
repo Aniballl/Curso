@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+    margin: auto;
+    color: rgb(51, 206, 185);
+}
+label{
+    text-align: center;
+    margin: auto;
+}
+input{
+    text-align: center;
+    margin: auto;
+}
+p{
+    text-align: center;
+    margin: auto;
+}
+button{
+    text-align: center;
+    margin: auto;
+}

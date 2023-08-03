@@ -1,0 +1,18 @@
+body{
+    background-color: rgba(118, 146, 104, 0.067);
+}
+h1{
+    text-align: center;
+    margin: auto;
+}
+div{
+    text-align: center;
+    margin: auto;
+    margin-top: 25px;
+}
+button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    box-shadow: 5px 5px rgb(179, 177, 177);
+}
