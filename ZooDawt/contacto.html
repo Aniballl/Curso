@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos ZooDatw</title>
+    <script src="js/scriptContacto.js"></script>
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="shourtcut icon" href="img/favicon.webp">
+</head>
+<body>
+
+    <form action="" method="get">
+        <label for="fname">Nombre</label>
+    <input type="text" id="fname" name="firstname" placeholder="Tu nombre.." class="entrada">
+    <br>
+    <label for="lname">Apellidos</label>
+    <input type="text" id="lname" name="lastname" placeholder="Tus Apellidos.." class="entrada">
+    <br>
+    <label for="formCto">Preferencia de Contacto</label>
+    <select id="formCto" name="formCto" class="entrada">
+        <option value=""></option>
+      <option value="telefono">Teléfono</option>
+      <option value="email">Email</option>
+      <option value="correo">Correo Postal</option>
+    </select>
+
+    <div class="telOculto">
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Tu Telefono...">
+    </div>
+    <div class="emailOculto">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Tu Email...">
+    </div>
+    <div class="correoOculto">
+        <label for="direccion">Direccion de Correo</label>
+        <input type="text" id="direccion" name="direccion" placeholder="Tu Direccion ...">
+    </div>
+
+    <br>
+    <label for="subject">Mensaje</label>
+    <textarea id="subject" name="subject" placeholder="Escribe Algo.." style="height:200px"></textarea>
+    <br>
+    <button type="button" id="boton">Enviar</button>
+    </form>
+    <p id="mensaje"></p>
+    
+    <div class="galeria">
+        <div>
+            <img src="img/ardilla-marron.webp" alt="Ardilla Comiendo" class="imagen">
+        </div>
+        <div>
+            <img src="img/ballena.webp" alt="Ballena nadando"class="imagen">
+        </div>
+        <div>
+            <img src="img/tarantula.webp" alt="Tarantula en una roca"class="imagen">
+        </div>
+    </div>
+</body>
+</html>

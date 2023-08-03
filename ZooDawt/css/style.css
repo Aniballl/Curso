@@ -1,0 +1,255 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+.logo img{
+    width: 30%;
+}
+.header{
+    background: rgb(55,157,19);
+    background: linear-gradient(180deg, rgba(55,157,19,1) 0%, rgba(114,218,76,1) 64%, rgba(208,235,198,1) 100%);
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.menu ul{
+    list-style-type: none;
+    text-align: right;
+}
+.menu li{
+   color: rgb(1,40,1); 
+   border-left: 2px solid white;
+   display: inline-block;
+   padding: 1%;
+   font-size: 2em;
+   
+}
+.headerSup li{
+    display: inline-block;
+    font-size: 0.8em;
+    padding: 5px;
+    text-align: right;
+}
+.headerSup ul{
+    display: flex;
+    justify-content: flex-end;
+}
+.material-symbols-outlined{
+    padding-right: 5px;
+}
+.datos{
+   padding-top: 5px; 
+}
+.headerSup ul{
+    background-color: #CFA455;
+    margin: 0;
+}
+.imagen img{
+    width: 100%;
+    transform: scaleX(-1);/*Invertir una imagen*/
+    
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+.imagen{
+    display: inline-block;
+    text-align: center; 
+    position: relative;
+}
+.imagen h1{
+    color: white;
+}
+.imagen p{
+    color: white;
+    text-decoration: wavy;
+    font-style: italic;
+}
+.button-74 {
+  background-color: #f5cea5;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.button-74:hover {
+  background-color: #91be63;
+}
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #ffffff;
+    font-size: 18px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/4 etc) */
+  .numbertext {
+    color: #ffffff;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #6fa76a;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #d69158;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: unset;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  .info{
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    background-color: #CFA455;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 20px;
+  }
+.boton{
+ bottom: unset;
+  background-color: #f5cea5;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+
+
+/*-------------------------------------*/
+[class*="col-"]{
+        width: 100%;
+    }
+@media only scream and (min-width:600px){
+/* Para el ordenador: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /*para movil*/
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
