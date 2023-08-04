@@ -139,4 +139,10 @@ window.addEventListener("load",()=>{
             }
         }
     })
+    let boton=document.getElementById("aumentar");
+    boton.addEventListener("click",()=>{
+        boton.style.fontSize="large";
+        boton.style.fontFamily="Arial";
+    })
+    
 })

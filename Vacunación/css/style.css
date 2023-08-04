@@ -22,3 +22,31 @@ body{
     background-color:rgb(235, 235, 235);
     margin: auto;
 }
+div{
+    display: none;
+}
+.img{
+    margin: auto;
+    margin-top: 50px;
+}
+.boton{
+    display: block;
+    font-size: 26px;
+    margin: auto;
+    padding: 30px;
+}
+.f0 {
+    font-size: 0.8rem;
+}
+.f1 {
+    font-size: 0.9rem;
+}
+.f2 {
+    font-size: 1rem;
+}
+.f3 {
+    font-size: 1.1rem;
+}
+.f4 {
+    font-size: 1.2rem;
+}
