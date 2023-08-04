@@ -27,47 +27,18 @@ function actualizaInfo(maximoCaracteres) {
     info.innerHTML = "Puedes escribir hasta "+(maximoCaracteres-elemento.value.length)+" caracteres adicionales";
   }
 }
-
-let elemento=document.getElementById("condiciones");
-for (var i=0; i<elemento;i++){
-  alert(" Elemento: " + elemento.value + "\n Seleccionado: " + elemento.checked);
-};
-
-var formularioPrincipal = document.getElementById("formulario"); 
-
 window.addEventListener("load",()=>{
-    let Swal=addEventListener("click",()=>{
-    Swal.fire({
-        title: 'Submit your Github username',
-        input: 'text',
-        inputAttributes: {
-        autocapitalize: 'off'
-        },
-        showCancelButton: true,
-        confirmButtonText: 'Look up',
-        showLoaderOnConfirm: true,
-        preConfirm: (login) => {
-        return fetch(`//api.github.com/users/${login}`)
-            .then(response => {
-            if (!response.ok) {
-                throw new Error(response.statusText)
-            }
-            return response.json()
-            })
-            .catch(error => {
-            Swal.showValidationMessage(
-                `Request failed: ${error}`
-            )
-            })
-        },
-        allowOutsideClick: () => !Swal.isLoading()
-    }).then((result) => {
-        if (result.isConfirmed) {
-        Swal.fire({
-            title: `${result.value.login}'s avatar`,
-            imageUrl: result.value.avatar_url
-        })
-        }
-        }) 
-    })
-})
+  let elemento=document.getElementById("condiciones");
+  elemento.addEventListener("click",()=>{
+    alert(" Elemento: " + elemento.value + "\n Seleccionado: " + elemento.checked);
+  })
+}); 
+
+function alerta() {
+  Swal.fire({
+    title: "Lo consegui!",
+    text: "diste a mi boton!",
+    icon: "success",
+    button: "Aww yiss!",
+  });
+}
