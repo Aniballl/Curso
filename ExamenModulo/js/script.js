@@ -3,7 +3,7 @@ function calcular() {
     let peso=parseInt(document.getElementById("peso").value);
     console.log(lugar);
     console.log(peso);
-    if (validarDatos(lugar)&& validarDatos2(peso)) {
+    if (validarDatos(lugar) && validarDatos2(peso)) {
         calcularPeso(lugar,peso);
     } 
 }
