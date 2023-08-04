@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2>Actividad - Ejercicio 17</h2>
+    <div id="info">Máximo 150 caracteres</div>
+    <textarea id="texto" onkeypress="return cuadro(event, 150);" onkeyup="actualizaInfo(150)" rows="6" cols="30"></textarea>
+
+    <H2>CheckBox</H2>
+    <form name="formulario">
+        <input type="text" name="elemento" placeholder="Nombre y Apellidos"/>
+    </form>
+
+    <input type="checkbox" value="condiciones" name="condiciones" id="condiciones"/> He leído y acepto las condiciones
+    <br>
+    <button>Alerta</button>
+</body>
+</html>
